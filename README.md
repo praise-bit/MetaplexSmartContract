@@ -44,7 +44,17 @@ The submission was built for the **Codigo DevQuest #3**, a community-powered ini
 ---
 
 ## Project Structure
-
+metaplex_smart_contract/
+├─ Anchor.toml
+├─ Cargo.toml
+├─ programs/
+│   └─ metaplex_smart_contract/
+│       └─ src/lib.rs
+├─ tests/
+│   └─ mint_nft_standalone.ts
+├─ tsconfig.json
+├─ package.json
+└─ README.md
 
 ---
 
@@ -53,3 +63,30 @@ The submission was built for the **Codigo DevQuest #3**, a community-powered ini
 1. **Install dependencies**
 ```bash
 npm install
+
+Build the Program
+anchor build
+
+Run the test
+npx ts-node tests/mint_nft_standalone.ts
+
+Notes
+	•	The test simulates NFT minting and metadata creation on Solana devnet.
+	•	No frontend application is required — the focus is on program logic and unit tests.
+	•	Fully compatible with CodeSandbox + TypeScript + Anchor.
+
+⸻
+
+References
+	•	Anchor Framework
+	•	Metaplex Token Metadata
+	•	Codigo AI Development Platform
+
+⸻
+
+Author
+
+Mark 
+Email: retrovocoded@gmail.com
+Location: Port Harcourt, Nigeria
+
