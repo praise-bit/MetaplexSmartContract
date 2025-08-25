@@ -1,0 +1,12 @@
+[package]
+name = "metaplex_smart_contract"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "metaplex_smart_contract"
+
+[dependencies]
+anchor-lang = "0.31.1"
+mpl-token-metadata = {  version = "1.6.0", features = ["no-entrypoint"] }

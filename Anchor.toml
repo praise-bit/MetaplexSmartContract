@@ -1,0 +1,9 @@
+[programs.devnet]
+metaplex_smart_contract = "4Nd1mYw7E7w9G8bXJv2qkZx5MhfV1LQ7KJ2r7s8k9vUe"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "node tests/metaplex_smart_contract.js"
