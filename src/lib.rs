@@ -58,10 +58,10 @@ pub struct Initialize {}
 pub struct MintNFT<'info> {
     /// CHECK: handled by Metaplex
     #[account(mut)]
-    pub metadata: UncheckedAccount<'info>,
+    pub metadata: AccountInfo<'info>,
     /// CHECK
     #[account(mut)]
-    pub mint: UncheckedAccount<'info>,
+    pub mint: AccountInfo, anchor_spl::token::Mint>,
     /// CHECK
     pub mint_authority: Signer<'info>,
     /// CHECK
